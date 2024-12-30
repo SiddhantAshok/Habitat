@@ -104,8 +104,17 @@ header a{
   cursor: pointer;
   transition: ease 0.3s;
 }
-
+/* .carousel .list .item .content button {
+  border: 2px solid #f1683a;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: "Poppins";
+  font-weight: 500;  
+  cursor: pointer;
+  transition: ease 0.3s;
+} */
 .carousel .list .item .content button:nth-child(2){
+  border: 2px solid #f1683a;
   background-color: transparent;
   color: #eee;
 }
