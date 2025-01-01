@@ -130,7 +130,11 @@ header a{
   width: max-content;
   z-index: 100;
   display: flex;
-  gap: 20px;
+}
+
+.thumbnail .item:nth-child(1):hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .thumbnail .item{
@@ -191,6 +195,8 @@ header a{
 .carousel .list .item:nth-child(1) {
   z-index: 1;
 }
+
+
 
 .carousel .list .item:nth-child(1) .author,
 .carousel .list .item:nth-child(1) .title,
