@@ -58,6 +58,7 @@ header a{
   object-fit: cover;
 }
 
+
 .carousel .list .item .content {
   position: absolute;
   top: 20%;
@@ -122,6 +123,12 @@ header a{
 .carousel .list .item .content button:hover {
   font-size: 15px;
 }
+
+.carousel .list .item .content button:active {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
 
 .thumbnail {
   position: absolute;
@@ -348,3 +355,72 @@ header a{
     font-size: 30px;
   }
 }
+
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the container takes full width */
+  height: 100%; /* Ensure the container takes full height */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 100px;
+  z-index: 1; /* Place it above the background */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+}
+
+.card {
+  background-color: transparent; /* Set a background color for the card */
+  /* padding: 10px; */
+  /* padding-bottom: 50px; */
+  margin: 15px;
+  max-height: 390px;
+  border-radius: 8px; /* Add rounded corners for aesthetics */
+  border: 5px solid #5353535b; /* Optional: Highlight the card image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+.card:hover {
+  border: 5px solid #474747; /* Highlight the card on hover */
+  /* width: 200px; */
+  
+}
+
+.cardImage {
+  width: 200px;
+  height: 300px;
+  display: block; /* Ensures the image is treated as a block element */
+  object-fit: cover; /* Ensures the image fits nicely within the card */
+  
+  border-radius: 4px; /* Round the image corners slightly */
+}
+
+.cardTitle, .cardTopic {
+  font-family: "Poppins";
+  color: #615e61;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin: 5px;
+}
+.cardTopic {
+  font-size: 15px;
+  margin: 5px;
+}
+
