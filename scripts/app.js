@@ -7,6 +7,7 @@ let listItemDom = document.querySelector('.carousel .list');
 let thumbnailDom = document.querySelector('.carousel .thumbnail');
 
 
+
 // fetch all the animals from dotnet 6.0 api
 function getAllAnimals() {
   fetch('https://localhost:7252/api/animals')
@@ -55,7 +56,7 @@ function displayAnimalsThumbnails(animals){
         ${animals[animalIndex].description}
       </div>
       <div class="buttons">
-        <button>SEE MORE</button>
+        <button class="SeeMore">SEE MORE</button>
         <button>SUBSCRIBE</button>
       </div>
     </div>
@@ -67,6 +68,13 @@ function displayAnimalsThumbnails(animals){
 
   thumbnailDom.innerHTML = allAnimals;
   listItemDom.innerHTML = allAnimalsForListDom;
+
+  document.querySelectorAll('.SeeMore').forEach((note) => {
+    note.addEventListener('click', function() {
+      // alert('See more button clicked');
+      window.location.href = "seeMore.html";
+    });
+  });
 
   // if (Array.isArray(animals)) { // Add the first element to the end of the array 
     
@@ -107,6 +115,8 @@ if(nextDom){
     showSlider('next');
   }
 }
+
+
 
 if(prevDom){
   prevDom.onclick = function() {
