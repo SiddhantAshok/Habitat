@@ -396,7 +396,7 @@ header a{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 .card:hover {
-  border: 5px solid #474747; /* Highlight the card on hover */
+  border: 6px solid #474747; /* Highlight the card on hover */
   /* width: 200px; */
   
 }
